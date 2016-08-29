@@ -1,0 +1,60 @@
+Question 1:
+
+
+Qn 1:
+
+quiz1: a[0]:0,  a[0]:30, *Ptr1:0 *Ptr2:1 
+
+
+Qn 2:
+
+unsigned int myIPAddress = 0xdeadbeef;
+unsigned int  anIPAddress;
+anIPAddress = ((myIPAddress>>24)&0xff) | // moving byte 3 to byte 0
+                    ((myIPAddress<<8)&0xff0000) | // moving byte 1 to byte 2
+                    ((myIPAddress>>8)&0xff00) | // moving byte 2 to byte 1
+                    ((myIPAddress<<24)&0xff000000); // moving byte 0 to byte 3
+
+Qn 3 :
+
+quiz1: step 1: a[0]:0,  a[0]:30, a[0]:48, myIPAddress:efbeadde 
+
+
+Question 2:
+
+211 McAdams
+
+Question 3:
+
+Grade Distribution for Quizes is 10%
+
+Question 4:
+
+
+Error detection involves techniques to identify noise or other impairment to the data as it is transferred from source to destination. It ensures data delivery across malicious networks.
+
+
+Question 5:
+
+Transport Layer :  Error detection code such as 'checksum' checks for any data corruption, lost of data, out of order data and duplicated segments. Each segment has a 16 bit field in its header for checksum. The Destination Transport layer discards segments that have checksum errors.
+
+Network Layer : IPV4 provides reliability to ensure IP packet headers are error free. The routing node calculates 'checksum' for error detection and discards it if the checksum is bad.
+
+Data Link Layer : It uses Parity Check and Cyclic Redundancy Check (CRC) to detect errors. 
+
+Physical Layer : Error detection is carried out using 'Hamming Distance', 'Checksum' or 'CRC'.
+ 
+
+
+Question 6:
+
+In best conditions, the average throughput between host 1 and host 2 is min{10mbps,100mbps} = 10mbps .
+
+Question 7:
+
+Transmission Delay = (L/R) = (1500 * 8)/(10 Mbps ) = 1.2 ms
+Total Propagation delay = 4 ms + 10 ms = 14 ms
+
+Total time to send packet from Host 1 to Host 2 = 1.2 + 14 ms =  15.2 ms
+
+
